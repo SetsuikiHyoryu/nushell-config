@@ -161,3 +161,6 @@ def --env yaya [...args] {
     }
     rm -fp $tmp
 }
+
+# [[Alias]]
+alias dotfile = git --git-dir=$"($nu.home-dir)/dotfile/" --work-tree=$"($nu.home-dir)" -c status.showUntrackedFiles=no
